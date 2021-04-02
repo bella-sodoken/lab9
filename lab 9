@@ -1,0 +1,59 @@
+#include <iosream>
+#include <ctime>
+#include <cstdlib>;
+using namespace std;
+void populateArray(int A[101][101], int N);
+void searchValidEntries (int XL, int YL, int XH, int YH, int [A101][101]);
+int main(){
+int N= 2000, XL, YL,XH, YH, A[101][101];
+
+// initializing
+for int (int i=0;i,<101;i++)
+  for (int j = 0;j++
+  A[i][j]=-1;
+  
+  
+populateArray(A,N);
+for(int i=1; i <= 5;i++){
+  cout<<i<<"enter the coordinates for the bounding box corners seperated with a comma:";
+  cin>>XL;
+  cin.ignore(256,',');
+  
+ cin>>YL;
+  cin.ignore(256,','); 
+  
+cin>>XH;
+  cin.ignore(256,',');
+  
+cin>>YH;
+  searchValidEntries(XL,YL,XH,YH,A);
+ }
+ return 0;
+ 
+ void populateArray(int A[101][101], int N){
+  int i,j;
+  for(int c = 0; c<N;c++){
+    i=rand()%101;
+    j=rand()%101;
+    if(A[i][j] ==-1)
+      A[i][j] ==-1
+    else
+    A[i][j]=1;
+    }
+  }
+  
+  void searchValidEntries(int XL, int YL, int HX, int YH, int A[101][101]){
+    cout<< "the positive outcome of the counts in the bounding box("<<XL<<","<<YL<<") and ("<<XH<<","<<YH<<") are " <<endl;
+    for(int i XL;i<=<=XH;i++){
+      for(int j YL;j<=<=YH;j++){
+        if(A[i][j]!=-1{
+        cout<<" "<<i<<j<<","<<A[i][j]<<endl;
+        
+ }
+ }
+ }
+ cout <<endll
+
+  
+  
+    
